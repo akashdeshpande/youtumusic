@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&display=swap");
+
+:root {
+    --mid-dark-grey: #f2f4f6;
+    --bright: #fcfcfc;
+    --accent: #ff4b4b;
+    --light-text: #8e94a2;
+    --dark-text: #3b4660;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Mukta", sans-serif;
+    background-color: var(--bright);
+    color: var(--dark-text);
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-nav {
+    width: 300px;
+    background-color: var(--mid-dark-grey);
+    height: calc(100vh - 288px);
+    box-sizing: border-box;
+    padding: 24px 0px 0px 24px;
+    overflow-y: scroll;
+}
+
+.nav-logo {
+    width: 180px;
+}
+
+.library {
+    padding-top: 16px;
+}
+
+.library-section {
+    margin-top: 32px;
+}
+
+.library-section-heading {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: var(--light-text);
+    font-weight: 700;
+}
+
+.library-items {
+    margin-top: 14px;
+}
+
+.library-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.library-item-text {
+    font-size: 18px;
+    margin-left: 16px;
+    font-weight: 600;
+}
+
+.library-item-active {
+    color: var(--accent);
+}
+
+.videoBox {
+    position: absolute;
+    bottom: 0%;
+    width: 300px;
+    margin-bottom: 120px;
+}
+
+.player {
+    background-color: white;
+    height: 120px;
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
+    box-sizing: border-box;
+}
