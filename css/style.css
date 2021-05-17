@@ -6,7 +6,7 @@
     --accent: #ff4b4b;
     --light-text: #8e94a2;
     --dark-text: #3b4660;
-    --player-height: 120px;
+    --player-height: 112px;
 }
 
 body {
@@ -51,9 +51,6 @@ body {
 .nav-logo {
     width: 180px;
     padding-top: 4px;
-}
-
-.library {
 }
 
 .library-section {
@@ -101,4 +98,34 @@ body {
     bottom: 0px;
     width: 100vw;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+.song-details-container {
+    flex-basis: 300px;
+    box-sizing: border-box;
+    padding: 0px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.song-name {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.artist-name {
+    font-size: 14px;
+    color: var(--light-text);
+    line-height: 22px;
+}
+
+.controls-container {
+    padding: 0 48px;
+    flex: 1;
+    display: flex;
+    align-items: center;
 }
