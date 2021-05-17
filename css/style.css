@@ -115,17 +115,32 @@ body {
     font-size: 18px;
     font-weight: 600;
     line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 220px;
+    white-space: nowrap;
 }
 
 .artist-name {
     font-size: 14px;
     color: var(--light-text);
     line-height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 220px;
+    white-space: nowrap;
 }
 
 .controls-container {
     padding: 0 48px;
     flex: 1;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+}
+
+#progressbar {
+    margin: 0;
+    height: 30px;
+    width: 100%;
+    outline: none;
 }
