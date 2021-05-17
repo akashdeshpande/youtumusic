@@ -4,6 +4,7 @@
     --mid-dark-grey: #f2f4f6;
     --bright: #fcfcfc;
     --accent: #ff4b4b;
+    --less-bright: #f4f6f8;
     --light-text: #8e94a2;
     --dark-text: #3b4660;
     --player-height: 112px;
@@ -138,9 +139,103 @@ body {
     flex-direction: column;
 }
 
-#progressbar {
-    margin: 0;
+.progressbar-container {
     height: 30px;
     width: 100%;
+}
+
+/* invisible progress bar */
+
+#progressbar {
+    margin: 0;
     outline: none;
+    width: 100%;
+    -webkit-appearance: none;
+    background: transparent;
+}
+
+#progressbar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+#progressbar:focus {
+    outline: none;
+}
+
+#progressbar::-ms-track {
+    width: 100%;
+    cursor: pointer;
+
+    /* Hides the slider so custom styles can be added */
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+/* customizing the thumb */
+#progressbar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 14px;
+    width: 14px;
+    border: 0px;
+    border-radius: 50%;
+    background: var(--accent);
+    margin-top: -5px;
+}
+
+#progressbar::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 14px;
+    width: 14px;
+    border: 0px;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+#progressbar::-ms-thumb {
+    -webkit-appearance: none;
+    height: 14px;
+    width: 14px;
+    border: 0px;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+/* customizing the track */
+#progressbar::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    background: var(--less-bright);
+    border-radius: 4px;
+}
+
+#progressbar::-moz-range-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    background: var(--less-bright);
+    border-radius: 4px;
+}
+
+#progressbar::-ms-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    background: var(--less-bright);
+    border-radius: 4px;
+}
+
+/* range progress */
+/* only for firefox */
+#progressbar::-moz-range-progress {
+    height: 4px;
+    background: var(--accent);
+    border-radius: 4px;
+}
+
+#progressbar::-webkit-progress-value {
+    height: 4px;
+    background: var(--accent);
+    border-radius: 4px;
 }
