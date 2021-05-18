@@ -140,6 +140,9 @@ body {
 }
 
 .progressbar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 30px;
     width: 100%;
 }
@@ -227,6 +230,16 @@ body {
 }
 
 /* range progress */
+
+#progressbar::before {
+    content: "";
+    width: 280px;
+    height: 4px;
+    border-radius: 4px;
+    position: absolute;
+    background-color: var(--accent);
+}
+
 /* only for firefox */
 #progressbar::-moz-range-progress {
     height: 4px;
@@ -234,8 +247,7 @@ body {
     border-radius: 4px;
 }
 
-#progressbar::-webkit-progress-value {
-    height: 4px;
-    background: var(--accent);
-    border-radius: 4px;
+.time-container {
+    display: flex;
+    justify-content: space-between;
 }
