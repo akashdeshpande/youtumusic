@@ -203,10 +203,9 @@ body {
 }
 
 .contol-buttons-container {
-    display: grid;
-    justify-items: center;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    grid-template-columns: 60px 1fr 60px;
     margin-top: 3px;
 }
 
@@ -233,9 +232,14 @@ body {
     cursor: pointer;
 }
 
+.left-buttons {
+    align-items: center;
+    width: 60px;
+}
+
 .right-buttons {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 60px;
     cursor: pointer;
 }
