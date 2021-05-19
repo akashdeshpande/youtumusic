@@ -136,6 +136,10 @@ body {
     white-space: nowrap;
 }
 
+.song-detail-like-icon {
+    cursor: pointer;
+}
+
 .controls-container {
     padding: 0 48px;
     flex: 1;
@@ -215,20 +219,20 @@ body {
 }
 
 .play-btn {
-    font-size: 48px;
+    font-size: 40px;
     color: var(--accent);
     cursor: pointer;
 }
 
 .prev-btn {
     font-size: 24px;
-    margin-right: 34px;
+    margin-right: 50px;
     cursor: pointer;
 }
 
 .next-btn {
     font-size: 24px;
-    margin-left: 32px;
+    margin-left: 48px;
     cursor: pointer;
 }
 

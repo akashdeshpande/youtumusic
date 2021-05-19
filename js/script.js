@@ -22,3 +22,19 @@ playbtn.addEventListener('click', () => {
     }
     
 });
+
+// toggle heart
+
+let heartbtn = document.querySelector('.song-detail-like-icon');
+
+heartbtn.addEventListener('click', () => {
+    if(heartbtn.classList.contains("fa")){
+        heartbtn.classList.remove("fa");
+        heartbtn.classList.add("far");
+    }
+    else {
+        heartbtn.classList.remove("far");
+        heartbtn.classList.add("fa");
+    }
+    
+});
